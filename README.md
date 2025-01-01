@@ -11,22 +11,18 @@ Here's a quick overview of the files:
 - environment.py: It sets up tasks, robot preferences, and availability matrices.
 - run.py: It is the main script that runs the simulation.
 # Requirements
-- Python 3.7 or higher version
+- Python 3.9.13 or higher version
 - Libraries: pygame, numpy
 # Installation
-1. Clone the repository:
-   ```bash
-     git clone https://github.com/sabrina160/CSE366_lab-2.git
-     cd CSE366_lab-2
-     cd Sec-6-Fall2024-2021-3-60-252 -Lab-task-2
-2. Install the required libraries:
+1. Install the required libraries:
    ```bash
       pip install pygame
-# How to Run
-1. Navigate to the project folder:
+      pip install numpy
+# How to run:
+1. Clone the repository:
    ```bash
-     cd CSE366_lab-2
+     git clone https://github.com/sabrina160/Sec-6-Fall2024-2021-3-60-252--Lab-task-3_CSE366.git
+     cd .\Sec-6-Fall2024-2021-3-60-252--Lab-task-3_CSE366\
 2. Run the main simulation:
    ```bash
-     python run_merge.py
-3. A Pygame window will open, displaying the grid environment. Click the Start button to begin the simulation.
+     py .\run.py
