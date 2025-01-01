@@ -58,21 +58,18 @@ Combines genes (class assignments) from two parent schedules.
        - Crossover Point: 3
        - Child: [1, 2, 3, 2, 1]
 3. Mutation:
-Introduces random changes to maintain genetic diversity.
-Random Assignment Mutation:
-Example:
-Original Gene: [1, 2, 3, 4, 5]
-Mutated Gene: [1, 2, 4, 4, 5]
-Visualization Highlights
-Schedule Grid:
-Displays student preferences and assigned time slots.
-Highlights conflicts and priorities.
-Progress Updates:
-Shows current generation and best fitness score.
-Example Output
-A grid visualization where each cell represents a class assigned to a specific student or time slot. Over generations, the grid evolves to reflect better schedules with fewer conflicts and more aligned preferences.
-Customizing the Simulation
-Modify these parameters in run.py to experiment with different scenarios:
+ - Introduces random changes to maintain genetic diversity.
+   - Random Assignment Mutation:
+     - Example:
+       - Original Gene: [1, 2, 3, 4, 5]
+       - Mutated Gene: [1, 2, 4, 4, 5]
+# Visualization Highlights
+- Schedule Grid:
+ - Displays student preferences and assigned time slots.
+ - Highlights conflicts and priorities.
+- Progress Updates:
+ - Shows current generation and best fitness score.
+# Customizing the Simulation
 num_classes: Number of classes to schedule.
 num_students: Number of students in the system.
 population_size: Number of solutions per generation.
