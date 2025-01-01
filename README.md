@@ -11,16 +11,20 @@ The scheduling problem involves:
 - Classes:
   - Duration: 1-2 hours.
   - Priority: Scale of 1-5.
-Students:
-Availability: Specific time slots they are available.
-Preferences: Priority for certain time slots.
-Time Slots:
-Total number of available slots to assign classes.
+- Students:
+  - Availability: Specific time slots they are available.
+  - Preferences: Priority for certain time slots.
+- Time Slots:
+  - Total number of available slots to assign classes.
 # Project Structure
-Here's a quick overview of the files:
-- agent.py: It defines the Agent class to represent robots, their efficiencies, and assigned tasks.
-- environment.py: It sets up tasks, robot preferences, and availability matrices.
-- run.py: It is the main script that runs the simulation.
+Here's a breakdown of the main files:
+- agent.py: Implements the Student class to represent:
+  - Attributes: id, availability, preference, and schedule.
+  - Methods: Assign classes and clear schedules for new generations.
+- environment.py: Defines the scheduling environment and visualizes schedules.
+  - Generates random initial schedules.
+  - Displays schedules using Pygame, showing preferences, assignments, and conflicts.
+- run.py: Runs the genetic algorithm to optimize schedules.
 # Requirements
 - Python 3.9.13 or higher version
 - Libraries: pygame, numpy
@@ -37,3 +41,41 @@ Here's a quick overview of the files:
 2. Run the main simulation:
    ```bash
      py .\run.py
+# Genetic Algorithm Details
+1. Fitness Function:
+   - Conflict Minimization: Penalizes schedules where classes are assigned to unavailable students.
+     - Formula: Conflict Penalty = Number of unavailable time slots used
+   - Preference Alignment: Rewards schedules that match student time slot preferences.
+     - Formula: Preference Penalty = 1 / Student’s Preference (if time slot is not preferred)
+   - Total Fitness: Combines conflict and preference penalties.
+     - Formula: Fitness = Conflict Penalty + Preference Penalty
+2. Crossover:
+Combines genes (class assignments) from two parent schedules.
+   - Single-Point Crossover:
+     - Example:
+       Parent 1: [1, 2, 3, 4, 5]
+       Parent 2: [5, 4, 3, 2, 1]
+       Crossover Point: 3
+       Child: [1, 2, 3, 2, 1]
+3. Mutation:
+Introduces random changes to maintain genetic diversity.
+Random Assignment Mutation:
+Example:
+Original Gene: [1, 2, 3, 4, 5]
+Mutated Gene: [1, 2, 4, 4, 5]
+Visualization Highlights
+Schedule Grid:
+Displays student preferences and assigned time slots.
+Highlights conflicts and priorities.
+Progress Updates:
+Shows current generation and best fitness score.
+Example Output
+A grid visualization where each cell represents a class assigned to a specific student or time slot. Over generations, the grid evolves to reflect better schedules with fewer conflicts and more aligned preferences.
+Customizing the Simulation
+Modify these parameters in run.py to experiment with different scenarios:
+num_classes: Number of classes to schedule.
+num_students: Number of students in the system.
+population_size: Number of solutions per generation.
+mutation_rate: Probability of mutation for each gene.
+n_generations: Total number of generations to run.
+generation_delay: Delay (in milliseconds) between generations.
