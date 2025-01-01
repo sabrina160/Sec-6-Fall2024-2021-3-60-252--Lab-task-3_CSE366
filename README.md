@@ -1,10 +1,21 @@
 # Class Scheduling Optimization using Genetic Algorithms
-This project demonstrates a smart way to assign tasks to robots using genetic algorithms. It optimizes task distribution based on robot efficiency, availability, and task preferences, and visualizes the process in real-time with Pygame.
+This project focuses on creating an optimal class schedule for students using genetic algorithms. The goal is to minimize scheduling conflicts, align schedules with student preferences, and balance time slot usage efficiently. The process includes real-time visualization of schedules and fitness evaluation using Pygame.
 # Key Features
-- Dynamic Task Assignment: Assigns tasks to robots based on efficiency and availability.
-- Genetic Algorithm Optimization: Uses selection, crossover, and mutation to find the best task assignments.
-- Interactive Visualization: Real-time grid display showing task assignments and optimization progress.
-- Customizable Settings: Adjust the number of tasks, robots, and algorithm parameters to explore different scenarios.
+- Conflict-Free Scheduling: Minimizes time slot clashes and respects student availability.
+- Preference Alignment: Balances class schedules with student time slot preferences.
+- Genetic Algorithm Optimization: Uses selection, crossover, and mutation to generate optimal schedules over generations.
+- Interactive Visualization: Displays the scheduling process in real-time, highlighting conflicts and priorities.
+- Customizable Settings: Allows flexibility in the number of classes, students, and genetic algorithm parameters.
+# Problem Setup
+The scheduling problem involves:
+- Classes:
+  - Duration: 1-2 hours.
+  - Priority: Scale of 1-5.
+Students:
+Availability: Specific time slots they are available.
+Preferences: Priority for certain time slots.
+Time Slots:
+Total number of available slots to assign classes.
 # Project Structure
 Here's a quick overview of the files:
 - agent.py: It defines the Agent class to represent robots, their efficiencies, and assigned tasks.
