@@ -65,14 +65,14 @@ Combines genes (class assignments) from two parent schedules.
        - Mutated Gene: [1, 2, 4, 4, 5]
 # Visualization Highlights
 - Schedule Grid:
- - Displays student preferences and assigned time slots.
- - Highlights conflicts and priorities.
+   - Displays student preferences and assigned time slots.
+   - Highlights conflicts and priorities.
 - Progress Updates:
- - Shows current generation and best fitness score.
+   - Shows current generation and best fitness score.
 # Customizing the Simulation
-num_classes: Number of classes to schedule.
-num_students: Number of students in the system.
-population_size: Number of solutions per generation.
-mutation_rate: Probability of mutation for each gene.
-n_generations: Total number of generations to run.
-generation_delay: Delay (in milliseconds) between generations.
+- num_classes: Number of classes to schedule.
+- num_students: Number of students in the system.
+- population_size: Number of solutions per generation.
+- mutation_rate: Probability of mutation for each gene.
+- n_generations: Total number of generations to run.
+- generation_delay: Delay (in milliseconds) between generations.
