@@ -50,7 +50,7 @@ Here's a breakdown of the main files:
    - Total Fitness: Combines conflict and preference penalties.
      - Formula: Fitness = Conflict Penalty + Preference Penalty
 2. Crossover:
-Combines genes (class assignments) from two parent schedules.
+- Combines genes (class assignments) from two parent schedules.
    - Single-Point Crossover:
      - Example:
        - Parent 1: [1, 2, 3, 4, 5]
