@@ -53,10 +53,10 @@ Here's a breakdown of the main files:
 Combines genes (class assignments) from two parent schedules.
    - Single-Point Crossover:
      - Example:
-       Parent 1: [1, 2, 3, 4, 5]
-       Parent 2: [5, 4, 3, 2, 1]
-       Crossover Point: 3
-       Child: [1, 2, 3, 2, 1]
+       - Parent 1: [1, 2, 3, 4, 5]
+       - Parent 2: [5, 4, 3, 2, 1]
+       - Crossover Point: 3
+       - Child: [1, 2, 3, 2, 1]
 3. Mutation:
 Introduces random changes to maintain genetic diversity.
 Random Assignment Mutation:
