@@ -39,6 +39,7 @@ Here's a breakdown of the main files:
      git clone https://github.com/sabrina160/Sec-6-Fall2024-2021-3-60-252--Lab-task-3_CSE366.git
      cd .\Sec-6-Fall2024-2021-3-60-252--Lab-task-3_CSE366\
 2. Run the main simulation:
+   Use py for older version and python for latest version.
    ```bash
      py .\run.py
 # Genetic Algorithm Details
